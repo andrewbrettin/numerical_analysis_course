@@ -1,0 +1,10 @@
+name: default
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python
+  - numpy
+  - scipy
+  - matplotlib
+prefix: /Users/andrewbrettin/opt/anaconda3/envs/default
