@@ -7,4 +7,4 @@ print("I am so good at coding")
 
 print(2 * 4)
 
-print("I love numerical analosis")
+print("I love numerical analysis")
