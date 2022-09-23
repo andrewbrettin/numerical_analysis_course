@@ -57,16 +57,17 @@ def find_root(f, x_0, tol=TOL, max_iter=MAX_ITERATIONS):
     error = np.inf    # Initialize error to be inf to ensure larger than tol
     
     while error > tol and i < max_iter:
+        # Iteration
         x_k = x_list[-1]
-        print(x_k)
         x_new = steffensen_iteration(f, x_k)
         
-        # Iterate
+        # Update
         i = i + 1
         error = np.abs(x_new - x_k)
         x_list.append(x_new)
+    
     x_list = np.array(x_list)
-    return 
+    return x_list
 
 def main():
     x_list = find_root(f, x_0)
